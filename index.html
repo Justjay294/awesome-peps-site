@@ -45,36 +45,13 @@
   gap: 10px;
 }
 
-.brand-mark {
-  width: 42px;
-  height: 42px;
-  border-radius: 11px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(145deg, #57c7ff, #087ee6);
-  color: #06101d;
-  font-weight: 1000;
-  font-size: 15px;
-  box-shadow: 0 0 18px rgba(45,169,255,.35);
-}
-
-.brand-words {
-  display: flex;
-  flex-direction: column;
-  line-height: .9;
-  font-size: 14px;
-  letter-spacing: .08em;
-}
-
-.brand-words strong {
-  color: #f4f8ff;
-}
-
-.brand-words b {
-  color: #55bdff;
-  font-size: 12px;
-  letter-spacing: .16em;
+.brand-logo {
+  display: block;
+  width: 150px;
+  height: 64px;
+  object-fit: contain;
+  object-position: left center;
+  border-radius: 8px;
 }
     .navlinks { display: flex; gap: 18px; align-items: center; }
     .navlinks a { text-decoration: none; color: #dce8f8; font-weight: 700; font-size: .94rem; }
@@ -160,8 +137,7 @@
     <div class="wrap">
       <nav>
         <a class="brand" href="#">
-  <span class="brand-mark">AP</span>
-  <span class="brand-words"><strong>AWESOME</strong><b>PEPS</b></span>
+  <img src="images/awesome-peps-logo.png" alt="Awesome Peps" class="brand-logo">
 </a>
         <div class="navlinks">
           <a href="#catalog">Catalog</a>
