@@ -129,6 +129,42 @@
       .card p { font-size: .82rem; margin-bottom: 12px; }
       .card-btn { min-height: 40px; font-size: .88rem; }
     }
+    .logo-card {
+  position: relative;
+  width: min(520px, 90vw);
+  margin: 35px auto 10px;
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+.logo-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.scan-line {
+  position: absolute;
+  left: 3%;
+  width: 94%;
+  height: 3px;
+  top: 0;
+  background: #38bdf8;
+  box-shadow:
+    0 0 8px #38bdf8,
+    0 0 18px #38bdf8,
+    0 0 35px #008cff;
+  animation: logoScan 3s ease-in-out infinite alternate;
+}
+
+@keyframes logoScan {
+  from {
+    top: 2%;
+  }
+  to {
+    top: 97%;
+  }
+}
   </style>
 </head>
 <body>
@@ -147,6 +183,10 @@
   </header>
 
   <main>
+    <div class="logo-card">
+  <img src="images/awesome-peps-logo.png" alt="Awesome Peps logo">
+  <div class="scan-line"></div>
+</div>
     <section class="hero wrap">
       <span class="eyebrow">Research Materials</span>
       <h1>Premium research-use materials, clearly priced.</h1>
