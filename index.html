@@ -444,6 +444,27 @@ article.card > a.btn.request-open {
 article.card > a.btn.request-open:hover {
   filter: brightness(1.06);
 }
+
+.request-total-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 18px 0;
+  padding: 16px 18px;
+  border: 1px solid rgba(58,160,255,.38);
+  border-radius: 14px;
+  background: linear-gradient(180deg, rgba(21,66,111,.42), rgba(8,28,50,.5));
+}
+.request-total-box span {
+  color: #b9d7f5;
+  font-weight: 800;
+  font-size: 1rem;
+}
+.request-total-box strong {
+  color: #ffffff;
+  font-size: 1.45rem;
+}
 </style>
 </head>
 <body>
@@ -1110,7 +1131,10 @@ article.card > a.btn.request-open:hover {
 </label>
 </div>
 </div>
-<label class="notes-label">
+<div class="request-total-box">
+<span>Estimated Total</span>
+<strong id="estimated-total">$0.00</strong>
+</div><label class="notes-label">
       Notes / Questions
       <textarea class="request-control" disabled="" id="rq-notes" placeholder="Optional notes, requested information, or availability questions" rows="4"></textarea>
 </label>
@@ -1126,6 +1150,24 @@ article.card > a.btn.request-open:hover {
   const ack = document.getElementById('research-ack');
   const controls = Array.from(modal.querySelectorAll('.request-control'));
   const qtyInputs = Array.from(modal.querySelectorAll('.qty-input'));
+  const estimatedTotal = document.getElementById('estimated-total');
+
+  function parsePrice(priceText) {
+    const n = parseFloat(String(priceText || '').replace(/[^0-9.]/g, ''));
+    return isNaN(n) ? 0 : n;
+  }
+
+  function calculateTotal() {
+    let total = 0;
+    qtyInputs.forEach(input => {
+      const qty = parseInt(input.value || '0', 10) || 0;
+      total += qty * parsePrice(input.dataset.price);
+    });
+    estimatedTotal.textContent = '$' + total.toFixed(2);
+    return total;
+  }
+
+  qtyInputs.forEach(input => input.addEventListener('input', calculateTotal));
   const message = document.getElementById('request-message');
   const submit = document.getElementById('email-research-request');
 
@@ -1167,13 +1209,21 @@ article.card > a.btn.request-open:hover {
     }
 
     const selected = qtyInputs
-      .map(input => ({
-        qty: parseInt(input.value || '0', 10),
-        name: input.dataset.name,
-        strength: input.dataset.strength,
-        price: input.dataset.price
-      }))
+      .map(input => {
+        const qty = parseInt(input.value || '0', 10) || 0;
+        const unitPrice = parsePrice(input.dataset.price);
+        return {
+          qty,
+          name: input.dataset.name,
+          strength: input.dataset.strength,
+          price: input.dataset.price,
+          unitPrice,
+          lineTotal: qty * unitPrice
+        };
+      })
       .filter(item => item.qty > 0);
+
+    const grandTotal = selected.reduce((sum, item) => sum + item.lineTotal, 0);
 
     if (!selected.length) {
       message.textContent = 'Please enter a quantity for at least one research material.';
@@ -1192,8 +1242,13 @@ article.card > a.btn.request-open:hover {
     ];
 
     selected.forEach(item => {
-      lines.push(item.name + ' — ' + item.strength + ' — ' + item.price + ' — Qty: ' + item.qty);
+      lines.push(item.name + ' — ' + item.strength + ' — ' + item.price + ' each — Qty: ' + item.qty + ' — Line Total: $' + item.lineTotal.toFixed(2));
     });
+
+    lines.push(
+      '',
+      'ESTIMATED TOTAL: $' + grandTotal.toFixed(2)
+    );
 
     lines.push(
       '',
