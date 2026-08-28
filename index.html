@@ -1,11 +1,12 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Awesome Peps | Research Materials</title>
-  <meta name="description" content="Awesome Peps research-use materials catalog. For research use only. Not for human consumption.">
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Awesome Peps | Research Materials</title>
+<meta content="Awesome Peps research-use materials catalog. For research use only. Not for human consumption." name="description"/>
+<style>
     :root {
       --bg: #07101d;
       --panel: #0c1829;
@@ -165,246 +166,300 @@
     top: 97%;
   }
 }
-  </style>
+  .product-research {
+  margin: 12px 0 0;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255,255,255,.09);
+  color: #c8d7e8;
+  font-size: .88rem;
+  line-height: 1.5;
+}
+.product-research p { margin: 0 0 8px; }
+.product-research strong { color: #ffffff; }
+.blend-line {
+  font-size:.78rem;
+  color:#9fdff0;
+  margin-top:6px;
+  line-height:1.35;
+}
+/* Final catalog card styling */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+.card {
+  background: linear-gradient(180deg, #07101e 0%, #030812 100%);
+  border: 1px solid rgba(46, 151, 255, .38);
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: 0 14px 35px rgba(0,0,0,.32), inset 0 0 28px rgba(16,88,180,.05);
+}
+.card &gt; img {
+  width: 100%;
+  aspect-ratio: 1 / 1.16;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 14px;
+  display: block;
+  margin: 0 0 15px;
+  box-shadow: 0 0 22px rgba(0,110,255,.18);
+}
+.card h3 {
+  margin: 0 0 5px;
+  font-size: 1.18rem;
+  color: #ffffff;
+}
+.card h3 span {
+  color: #5ea6ff;
+  font-weight: 800;
+}
+.price {
+  color: #ffffff;
+  font-size: 1.34rem;
+  font-weight: 900;
+  margin: 2px 0 10px;
+}
+.product-research {
+  border-top: 1px solid rgba(72,155,255,.22);
+  margin-top: 12px;
+  padding-top: 12px;
+  color: #d8e4f3;
+}
+.product-research p {
+  margin: 0 0 10px;
+  line-height: 1.52;
+}
+.product-research strong {
+  color: #5ea6ff;
+}
+.btn {
+  margin-top: 8px;
+}
+@media (max-width: 980px) {
+  .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 650px) {
+  .grid { grid-template-columns: 1fr; }
+  .card &gt; img { aspect-ratio: 1 / 1.08; }
+}
+</style>
 </head>
 <body>
-  <header>
-    <div class="wrap">
-      <nav>
-        <a class="brand" href="#">
-  <img src="images/awesome-peps-logo.png" alt="Awesome Peps" class="brand-logo">
+<header>
+<div class="wrap">
+<nav>
+<a class="brand" href="#">
+<img alt="Awesome Peps" class="brand-logo" src="images/awesome-peps-logo.png"/>
 </a>
-        <div class="navlinks">
-          <a href="#catalog">Catalog</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <div class="logo-card">
-  <img src="images/awesome-peps-logo.png" alt="Awesome Peps logo">
-  <div class="scan-line"></div>
+<div class="navlinks">
+<a href="#catalog">Catalog</a>
+<a href="#contact">Contact</a>
 </div>
-    <section class="hero wrap">
-      <span class="eyebrow">Research Materials</span>
-      <h1>Premium research-use materials, clearly priced.</h1>
-      <p>Browse the current Awesome Peps catalog below. Each listing shows the research material, vial strength, current price, and a direct order-request link.</p>
-      <div class="notice"><strong>For research use only.</strong> Not for human consumption or medical use.</div>
-    </section>
+</nav>
+</div>
+</header>
+<main>
+<div class="logo-card">
+<img alt="Awesome Peps logo" src="images/awesome-peps-logo.png"/>
+<div class="scan-line"></div>
+</div>
+<section class="hero wrap">
+<span class="eyebrow">Research Materials</span>
+<h1>Premium research-use materials, clearly priced.</h1>
+<p>Browse the current Awesome Peps catalog below. Each listing shows the research material, vial strength, current price, and a direct order-request link.</p>
+<div class="notice"><strong>For research use only.</strong> Not for human consumption or medical use.</div>
+</section>
+<section class="section wrap" id="catalog">
+<div class="section-head">
+<div><h2>Current Catalog</h2><p class="catalog-note">Alphabetical research catalog • Silver-label presentation • Purity 99% • For research use only</p></div>
+<p>Prices shown are current listing prices and may change. Contact us to confirm availability before requesting an order.</p>
+</div>
+<div class="grid">
 
-    <section class="section wrap" id="catalog">
-      <div class="section-head">
-        <div><h2>Current Catalog</h2></div>
-        <p>Prices shown are current listing prices and may change. Contact us to confirm availability before requesting an order.</p>
-      </div>
-      <div class="grid">
-        
-      <article class="card">
-        <img src="images/bpc-157.png" alt="BPC-157 10mg research vial" loading="lazy">
-        <div class="card-body">
-          <h3>BPC-157 <span>10mg</span></h3>
-          <div class="price">$45.00</div>
-          <p>Research-use material. Product information and availability may vary.</p>
-          <a class="card-btn" href="mailto:mr.awesomepeps@gmail.com?subject=Order%20Request%20-%20BPC-157%2010mg">Request Order</a>
-        </div>
-      </article>
 
-      <article class="card">
-        <img src="images/cartalax.png" alt="Cartalax 20mg research vial" loading="lazy">
-        <div class="card-body">
-          <h3>Cartalax <span>20mg</span></h3>
-          <div class="price">$70.00</div>
-          <p>Research-use material. Product information and availability may vary.</p>
-          <a class="card-btn" href="mailto:mr.awesomepeps@gmail.com?subject=Order%20Request%20-%20Cartalax%2020mg">Request Order</a>
-        </div>
-      </article>
 
-      <article class="card">
-        <img src="images/dsip.png" alt="DSIP 5mg research vial" loading="lazy">
-        <div class="card-body">
-          <h3>DSIP <span>5mg</span></h3>
-          <div class="price">$25.00</div>
-          <p>Research-use material. Product information and availability may vary.</p>
-          <a class="card-btn" href="mailto:mr.awesomepeps@gmail.com?subject=Order%20Request%20-%20DSIP%205mg">Request Order</a>
-        </div>
-      </article>
 
-      <article class="card">
-        <img src="images/glutathione.png" alt="Glutathione 600mg research vial" loading="lazy">
-        <div class="card-body">
-          <h3>Glutathione <span>600mg</span></h3>
-          <div class="price">$40.00</div>
-          <p>Research-use material. Product information and availability may vary.</p>
-          <a class="card-btn" href="mailto:mr.awesomepeps@gmail.com?subject=Order%20Request%20-%20Glutathione%20600mg">Request Order</a>
-        </div>
-      </article>
 
-      <article class="card">
-        <img src="images/igf-1-lr3.png" alt="IGF-1 LR3 1mg research vial" loading="lazy">
-        <div class="card-body">
-          <h3>IGF-1 LR3 <span>1mg</span></h3>
-          <div class="price">$60.00</div>
-          <p>Research-use material. Product information and availability may vary.</p>
-          <a class="card-btn" href="mailto:mr.awesomepeps@gmail.com?subject=Order%20Request%20-%20IGF-1%20LR3%201mg">Request Order</a>
-        </div>
-      </article>
 
-      <article class="card">
-        <img src="images/ipamorelin.png" alt="Ipamorelin 10mg research vial" loading="lazy">
-        <div class="card-body">
-          <h3>Ipamorelin <span>10mg</span></h3>
-          <div class="price">$40.00</div>
-          <p>Research-use material. Product information and availability may vary.</p>
-          <a class="card-btn" href="mailto:mr.awesomepeps@gmail.com?subject=Order%20Request%20-%20Ipamorelin%2010mg">Request Order</a>
-        </div>
-      </article>
 
-      <article class="card">
-        <img src="images/kisspeptin.png" alt="Kisspeptin 10mg research vial" loading="lazy">
-        <div class="card-body">
-          <h3>Kisspeptin <span>10mg</span></h3>
-          <div class="price">$50.00</div>
-          <p>Research-use material. Product information and availability may vary.</p>
-          <a class="card-btn" href="mailto:mr.awesomepeps@gmail.com?subject=Order%20Request%20-%20Kisspeptin%2010mg">Request Order</a>
-        </div>
-      </article>
 
-      <article class="card">
-        <img src="images/klow.png" alt="KLOW 80mg research vial" loading="lazy">
-        <div class="card-body">
-          <h3>KLOW <span>80mg</span></h3>
-          <div class="price">$75.00</div>
-          <p>Research-use material. Product information and availability may vary.</p>
-          <a class="card-btn" href="mailto:mr.awesomepeps@gmail.com?subject=Order%20Request%20-%20KLOW%2080mg">Request Order</a>
-        </div>
-      </article>
 
-      <article class="card">
-        <img src="images/kpv.png" alt="KPV 10mg research vial" loading="lazy">
-        <div class="card-body">
-          <h3>KPV <span>10mg</span></h3>
-          <div class="price">$40.00</div>
-          <p>Research-use material. Product information and availability may vary.</p>
-          <a class="card-btn" href="mailto:mr.awesomepeps@gmail.com?subject=Order%20Request%20-%20KPV%2010mg">Request Order</a>
-        </div>
-      </article>
 
-      <article class="card">
-        <img src="images/mots-c.png" alt="MOTS-C 20mg research vial" loading="lazy">
-        <div class="card-body">
-          <h3>MOTS-C <span>20mg</span></h3>
-          <div class="price">$60.00</div>
-          <p>Research-use material. Product information and availability may vary.</p>
-          <a class="card-btn" href="mailto:mr.awesomepeps@gmail.com?subject=Order%20Request%20-%20MOTS-C%2020mg">Request Order</a>
-        </div>
-      </article>
 
-      <article class="card">
-        <img src="images/nad-plus.png" alt="NAD+ 1000mg research vial" loading="lazy">
-        <div class="card-body">
-          <h3>NAD+ <span>1000mg</span></h3>
-          <div class="price">$50.00</div>
-          <p>Research-use material. Product information and availability may vary.</p>
-          <a class="card-btn" href="mailto:mr.awesomepeps@gmail.com?subject=Order%20Request%20-%20NAD%2B%201000mg">Request Order</a>
-        </div>
-      </article>
 
-      <article class="card">
-        <img src="images/pinealon.png" alt="Pinealon 10mg research vial" loading="lazy">
-        <div class="card-body">
-          <h3>Pinealon <span>10mg</span></h3>
-          <div class="price">$50.00</div>
-          <p>Research-use material. Product information and availability may vary.</p>
-          <a class="card-btn" href="mailto:mr.awesomepeps@gmail.com?subject=Order%20Request%20-%20Pinealon%2010mg">Request Order</a>
-        </div>
-      </article>
 
-      <article class="card">
-        <img src="images/retatrutide.png" alt="Retatrutide 30mg research vial" loading="lazy">
-        <div class="card-body">
-          <h3>Retatrutide <span>30mg</span></h3>
-          <div class="price">$75.00</div>
-          <p>Research-use material. Product information and availability may vary.</p>
-          <a class="card-btn" href="mailto:mr.awesomepeps@gmail.com?subject=Order%20Request%20-%20Retatrutide%2030mg">Request Order</a>
-        </div>
-      </article>
 
-      <article class="card">
-        <img src="images/selank.png" alt="Selank 10mg research vial" loading="lazy">
-        <div class="card-body">
-          <h3>Selank <span>10mg</span></h3>
-          <div class="price">$40.00</div>
-          <p>Research-use material. Product information and availability may vary.</p>
-          <a class="card-btn" href="mailto:mr.awesomepeps@gmail.com?subject=Order%20Request%20-%20Selank%2010mg">Request Order</a>
-        </div>
-      </article>
 
-      <article class="card">
-        <img src="images/semax.png" alt="Semax 10mg research vial" loading="lazy">
-        <div class="card-body">
-          <h3>Semax <span>10mg</span></h3>
-          <div class="price">$40.00</div>
-          <p>Research-use material. Product information and availability may vary.</p>
-          <a class="card-btn" href="mailto:mr.awesomepeps@gmail.com?subject=Order%20Request%20-%20Semax%2010mg">Request Order</a>
-        </div>
-      </article>
 
-      <article class="card">
-        <img src="images/sermorelin.png" alt="Sermorelin 10mg research vial" loading="lazy">
-        <div class="card-body">
-          <h3>Sermorelin <span>10mg</span></h3>
-          <div class="price">$55.00</div>
-          <p>Research-use material. Product information and availability may vary.</p>
-          <a class="card-btn" href="mailto:mr.awesomepeps@gmail.com?subject=Order%20Request%20-%20Sermorelin%2010mg">Request Order</a>
-        </div>
-      </article>
 
-      <article class="card">
-        <img src="images/ss-31.png" alt="SS-31 10mg research vial" loading="lazy">
-        <div class="card-body">
-          <h3>SS-31 <span>10mg</span></h3>
-          <div class="price">$50.00</div>
-          <p>Research-use material. Product information and availability may vary.</p>
-          <a class="card-btn" href="mailto:mr.awesomepeps@gmail.com?subject=Order%20Request%20-%20SS-31%2010mg">Request Order</a>
-        </div>
-      </article>
 
-      <article class="card">
-        <img src="images/tb-500.png" alt="TB-500 10mg research vial" loading="lazy">
-        <div class="card-body">
-          <h3>TB-500 <span>10mg</span></h3>
-          <div class="price">$65.00</div>
-          <p>Research-use material. Product information and availability may vary.</p>
-          <a class="card-btn" href="mailto:mr.awesomepeps@gmail.com?subject=Order%20Request%20-%20TB-500%2010mg">Request Order</a>
-        </div>
-      </article>
 
-      <article class="card">
-        <img src="images/tesamorelin.png" alt="Tesamorelin 10mg research vial" loading="lazy">
-        <div class="card-body">
-          <h3>Tesamorelin <span>10mg</span></h3>
-          <div class="price">$65.00</div>
-          <p>Research-use material. Product information and availability may vary.</p>
-          <a class="card-btn" href="mailto:mr.awesomepeps@gmail.com?subject=Order%20Request%20-%20Tesamorelin%2010mg">Request Order</a>
-        </div>
-      </article>
-      </div>
-    </section>
-
-    <section class="section wrap" id="contact">
-      <div class="contact">
-        <h2>Customer Order Requests</h2>
-        <p>Questions about availability or an order request? Email Awesome Peps and include the product name and quantity you're asking about.</p>
-        <a class="button" href="mailto:mr.awesomepeps@gmail.com?subject=Awesome%20Peps%20Order%20Request">Email Awesome Peps</a>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="wrap">Awesome Peps · Research use only · Not for human consumption</div>
-  </footer>
+<article class="card"><img alt="AHK-Cu 50 mg" src="images/catalog-ahk-cu-50-mg.jpg"/><h3>AHK-Cu <span>50 mg</span></h3><div class="price">$40</div><div class="product-research"><p><strong>Research:</strong> A copper-binding tripeptide studied in skin and hair-follicle biology, extracellular-matrix signaling, and tissue remodeling.</p><p><strong>In Plain English:</strong> In simple terms, researchers are interested in how AHK-Cu delivers copper and influences signaling associated with hair follicles, skin structure, collagen-related biology, and tissue remodeling.</p></div><a class="btn" href="mailto:mr.awesomepeps@gmail.com?subject=Order%20Request%20-%20AHK-Cu%2050%20mg">Order Request</a></article><article class="card"><img alt="AICAR 100 mg" src="images/catalog-aicar-100-mg.jpg"/><h3>AICAR <span>100 mg</span></h3><div class="price">$55</div><div class="product-research"><p><strong>Research:</strong> An adenosine analog used in metabolic research that is converted intracellularly to ZMP, which can activate AMPK signaling.</p><p><strong>In Plain English:</strong> In simple terms, AMPK acts like a cellular fuel gauge. Researchers use AICAR to study how cells respond to low-energy signals, including glucose uptake, fat metabolism, mitochondrial activity, and exercise-related metabolic pathways.</p></div><a class="btn" href="mailto:mr.awesomepeps@gmail.com?subject=Order%20Request%20-%20AICAR%20100%20mg">Order Request</a></article><article class="card"><img alt="ARA-290 10 mg" src="images/catalog-ara-290-10-mg.jpg"/><h3>ARA-290 <span>10 mg</span></h3><div class="price">$40</div><div class="product-research"><p><strong>Research:</strong> Also known as cibinetide, a peptide derived from erythropoietin and studied for tissue-protective signaling through the innate repair receptor.</p><p><strong>In Plain English:</strong> In simple terms, researchers study signaling associated with inflammation control, nerve and tissue protection, neuropathic pathways, small-fiber biology, and repair responses without focusing on red-blood-cell production.</p></div><a class="btn" href="mailto:mr.awesomepeps@gmail.com?subject=Order%20Request%20-%20ARA-290%2010%20mg">Order Request</a></article><article class="card">
+<img alt="BPC-157 10mg" loading="lazy" src="images/catalog-bpc-157-10mg.jpg"/>
+<div class="card-body">
+<h3>BPC-157 <span>10mg</span></h3>
+<div class="price">$45.00</div>
+<p>Research-use material. Product information and availability may vary.</p>
+<div class="product-research"><p><strong>Research:</strong> A 15-amino-acid research peptide investigated in tissue-repair signaling, angiogenesis, inflammation, and gastrointestinal biology.</p><p><strong>In Plain English:</strong> Researchers study how it influences fibroblast movement, new blood-vessel formation, and repair signaling. In simple terms, it is commonly researched in models involving tendons, ligaments, muscles, wounds, inflammation, and the digestive tract.</p></div><a class="card-btn" href="mailto:mr.awesomepeps@gmail.com?subject=Order%20Request%20-%20BPC-157%2010mg">Request Order</a>
+</div>
+</article><article class="card"><img alt="Cagrilintide 10 mg" src="images/catalog-cagrilintide-10-mg.jpg"/><h3>Cagrilintide <span>10 mg</span></h3><div class="price">$85</div><div class="product-research"><p><strong>Research:</strong> A long-acting amylin analog studied for amylin-receptor signaling involved in satiety, gastric emptying, and metabolic regulation.</p><p><strong>In Plain English:</strong> In simple terms, amylin signaling helps communicate fullness after eating. Researchers study cagrilintide in appetite, satiety, food-intake, gastric-emptying, and body-weight regulation pathways.</p></div><a class="btn" href="mailto:mr.awesomepeps@gmail.com?subject=Order%20Request%20-%20Cagrilintide%2010%20mg">Order Request</a></article><article class="card">
+<img alt="Cartalax 20mg" loading="lazy" src="images/catalog-cartalax-20mg.jpg"/>
+<div class="card-body">
+<h3>Cartalax <span>20mg</span></h3>
+<div class="price">$70.00</div>
+<p>Research-use material. Product information and availability may vary.</p>
+<div class="product-research"><p><strong>Research:</strong> A short synthetic peptide studied in cartilage cells, extracellular-matrix biology, gene expression, and cellular-aging pathways.</p><p><strong>In Plain English:</strong> Researchers are interested in how it influences the cells and structural proteins that make up cartilage, making it a subject of joint, cartilage-maintenance, tissue-support, and aging research.</p></div><a class="card-btn" href="mailto:mr.awesomepeps@gmail.com?subject=Order%20Request%20-%20Cartalax%2020mg">Request Order</a>
+</div>
+</article><article class="card"><img alt="CJC-1295 (without DAC) + Ipamorelin 5 mg + 5 mg" src="images/catalog-cjc-1295-without-dac-ipamorelin-5-mg-5-mg.jpg"/><h3>CJC-1295 (without DAC) + Ipamorelin <span>5 mg + 5 mg</span></h3><div class="price">$45</div><div class="product-research"><p><strong>Research:</strong> A research blend combining a short-acting GHRH-receptor agonist with the ghrelin/GHSR agonist ipamorelin.</p><p><strong>In Plain English:</strong> In simple terms, the two components stimulate growth-hormone signaling through different receptors: CJC without DAC works through the GHRH pathway while ipamorelin works through the ghrelin receptor pathway. Researchers study their combined effects on pulsatile GH and downstream IGF-1 signaling.</p></div><a class="btn" href="mailto:mr.awesomepeps@gmail.com?subject=Order%20Request%20-%20CJC-1295%20(without%20DAC)%20+%20Ipamorelin%205%20mg%20+%205%20mg">Order Request</a></article><article class="card">
+<img alt="DSIP 5mg" loading="lazy" src="images/catalog-dsip-5mg.jpg"/>
+<div class="card-body">
+<h3>DSIP <span>5mg</span></h3>
+<div class="price">$25.00</div>
+<p>Research-use material. Product information and availability may vary.</p>
+<div class="product-research"><p><strong>Research:</strong> Delta sleep-inducing peptide is studied in sleep physiology, stress responses, pain signaling, and neuroendocrine regulation.</p><p><strong>In Plain English:</strong> In simple terms, researchers investigate how DSIP participates in the body's sleep and stress-regulation systems, including sleep patterns, relaxation, stress responses, and neuroendocrine signaling.</p></div><a class="card-btn" href="mailto:mr.awesomepeps@gmail.com?subject=Order%20Request%20-%20DSIP%205mg">Request Order</a>
+</div>
+</article><article class="card"><img alt="Epithalon 10 mg" src="images/catalog-epithalon-10-mg.jpg"/><h3>Epithalon <span>10 mg</span></h3><div class="price">$45</div><div class="product-research"><p><strong>Research:</strong> A synthetic tetrapeptide studied in cellular-aging research, gene regulation, circadian biology, oxidative stress, and telomere-related pathways.</p><p><strong>In Plain English:</strong> In simple terms, researchers investigate how Epithalon influences cellular aging signals, telomerase/telomere biology, biological rhythms, oxidative stress, and longevity-related pathways.</p></div><a class="btn" href="mailto:mr.awesomepeps@gmail.com?subject=Order%20Request%20-%20Epithalon%2010%20mg">Order Request</a></article><article class="card"><img alt="Epithalon 50 mg" src="images/catalog-epithalon-50-mg.jpg"/><h3>Epithalon <span>50 mg</span></h3><div class="price">$75</div><div class="product-research"><p><strong>Research:</strong> A synthetic tetrapeptide studied in cellular-aging research, gene regulation, circadian biology, oxidative stress, and telomere-related pathways.</p><p><strong>In Plain English:</strong> In simple terms, researchers investigate how Epithalon influences cellular aging signals, telomerase/telomere biology, biological rhythms, oxidative stress, and longevity-related pathways.</p></div><a class="btn" href="mailto:mr.awesomepeps@gmail.com?subject=Order%20Request%20-%20Epithalon%2050%20mg">Order Request</a></article><article class="card"><img alt="GHK-Cu 50 mg" src="images/catalog-ghk-cu-50-mg.jpg"/><h3>GHK-Cu <span>50 mg</span></h3><div class="price">$35</div><div class="product-research"><p><strong>Research:</strong> A naturally occurring copper-binding tripeptide studied in skin, extracellular-matrix, wound-repair, and gene-expression research.</p><p><strong>In Plain English:</strong> In simple terms, GHK-Cu carries copper and is studied for signaling involved in collagen and elastin, skin remodeling, wound-repair biology, antioxidant pathways, and hair-follicle research.</p></div><a class="btn" href="mailto:mr.awesomepeps@gmail.com?subject=Order%20Request%20-%20GHK-Cu%2050%20mg">Order Request</a></article><article class="card"><img alt="GHK-Cu 100 mg" src="images/catalog-ghk-cu-100-mg.jpg"/><h3>GHK-Cu <span>100 mg</span></h3><div class="price">$50</div><div class="product-research"><p><strong>Research:</strong> A naturally occurring copper-binding tripeptide studied in skin, extracellular-matrix, wound-repair, and gene-expression research.</p><p><strong>In Plain English:</strong> In simple terms, GHK-Cu carries copper and is studied for signaling involved in collagen and elastin, skin remodeling, wound-repair biology, antioxidant pathways, and hair-follicle research.</p></div><a class="btn" href="mailto:mr.awesomepeps@gmail.com?subject=Order%20Request%20-%20GHK-Cu%20100%20mg">Order Request</a></article><article class="card"><img alt="GLOW 70 mg" src="images/catalog-glow-70-mg.jpg"/><h3>GLOW <span>70 mg</span></h3><div class="price">$70</div><div class="blend-line">GHK-Cu 50 mg + BPC-157 10 mg + TB-500 10 mg</div><div class="product-research"><p><strong>Research:</strong> A 70 mg research blend containing GHK-Cu 50 mg, BPC-157 10 mg, and TB-500 10 mg.</p><p><strong>In Plain English:</strong> In simple terms, the blend combines copper-peptide signaling and tissue remodeling from GHK-Cu with BPC-157 and TB-500 research pathways involving repair signaling, cell migration, angiogenesis, inflammation, skin, connective tissue, and recovery biology.</p></div><a class="btn" href="mailto:mr.awesomepeps@gmail.com?subject=Order%20Request%20-%20GLOW%2070%20mg">Order Request</a></article><article class="card">
+<img alt="Glutathione 600mg" loading="lazy" src="images/catalog-glutathione-600mg.jpg"/>
+<div class="card-body">
+<h3>Glutathione <span>600mg</span></h3>
+<div class="price">$40.00</div>
+<p>Research-use material. Product information and availability may vary.</p>
+<div class="product-research"><p><strong>Research:</strong> A naturally occurring tripeptide and one of the body's major intracellular antioxidant and redox systems.</p><p><strong>In Plain English:</strong> In simple terms, glutathione helps cells manage oxidative stress and reactive compounds. Researchers study antioxidant defense, liver and detoxification biology, immune function, cellular stress, and oxidative-damage pathways.</p></div><a class="card-btn" href="mailto:mr.awesomepeps@gmail.com?subject=Order%20Request%20-%20Glutathione%20600mg">Request Order</a>
+</div>
+</article><article class="card"><img alt="hCG 10,000 IU" src="images/catalog-hcg-10-000-iu.jpg"/><h3>hCG <span>10,000 IU</span></h3><div class="price">$100</div><div class="product-research"><p><strong>Research:</strong> Human chorionic gonadotropin is a glycoprotein hormone that acts primarily as an LH-receptor agonist in reproductive biology.</p><p><strong>In Plain English:</strong> In simple terms, hCG can activate the same receptor as LH. Researchers study Leydig-cell signaling and testosterone production in testes, as well as ovarian follicle, ovulation, reproductive, and fertility-related physiology.</p></div><a class="btn" href="mailto:mr.awesomepeps@gmail.com?subject=Order%20Request%20-%20hCG%2010,000%20IU">Order Request</a></article><article class="card">
+<img alt="IGF-1 LR3 1mg" loading="lazy" src="images/catalog-igf-1-lr3-1mg.jpg"/>
+<div class="card-body">
+<h3>IGF-1 LR3 <span>1mg</span></h3>
+<div class="price">$60.00</div>
+<p>Research-use material. Product information and availability may vary.</p>
+<div class="product-research"><p><strong>Research:</strong> A modified, longer-acting analog of insulin-like growth factor 1 used in research on IGF-1 receptor signaling, cell growth, metabolism, and protein synthesis.</p><p><strong>In Plain English:</strong> It activates growth-factor pathways that signal cells to grow, divide, use nutrients, and build proteins. Researchers study these pathways in muscle and tissue growth, recovery biology, nutrient utilization, and metabolism.</p></div><a class="card-btn" href="mailto:mr.awesomepeps@gmail.com?subject=Order%20Request%20-%20IGF-1%20LR3%201mg">Request Order</a>
+</div>
+</article><article class="card">
+<img alt="Ipamorelin 10mg" loading="lazy" src="images/catalog-ipamorelin-10mg.jpg"/>
+<div class="card-body">
+<h3>Ipamorelin <span>10mg</span></h3>
+<div class="price">$40.00</div>
+<p>Research-use material. Product information and availability may vary.</p>
+<div class="product-research"><p><strong>Research:</strong> A synthetic growth-hormone secretagogue that activates the ghrelin/GHSR receptor and is studied for growth-hormone signaling.</p><p><strong>In Plain English:</strong> In simple terms, it is researched for how the body signals the pituitary to release growth hormone rather than supplying growth hormone itself, including GH-related growth, recovery, metabolism, and body-composition pathways.</p></div><a class="card-btn" href="mailto:mr.awesomepeps@gmail.com?subject=Order%20Request%20-%20Ipamorelin%2010mg">Request Order</a>
+</div>
+</article><article class="card">
+<img alt="Kisspeptin 10mg" loading="lazy" src="images/catalog-kisspeptin-10mg.jpg"/>
+<div class="card-body">
+<h3>Kisspeptin <span>10mg</span></h3>
+<div class="price">$50.00</div>
+<p>Research-use material. Product information and availability may vary.</p>
+<div class="product-research"><p><strong>Research:</strong> A reproductive signaling peptide that acts upstream of GnRH in the hypothalamic-pituitary-gonadal axis.</p><p><strong>In Plain English:</strong> Kisspeptin stimulates GnRH neurons. GnRH then signals the pituitary gland to release LH and FSH, which act on the testes or ovaries and help regulate testosterone, estrogen, progesterone, and reproductive function. Research focuses on stimulating the body's own reproductive hormone-signaling pathway.</p></div><a class="card-btn" href="mailto:mr.awesomepeps@gmail.com?subject=Order%20Request%20-%20Kisspeptin%2010mg">Request Order</a>
+</div>
+</article><article class="card">
+<img alt="KLOW 80mg" loading="lazy" src="images/catalog-klow-80mg.jpg"/>
+<div class="card-body">
+<h3>KLOW <span>80mg</span></h3>
+<div class="price">$75.00</div>
+<p>Research-use material. Product information and availability may vary.</p>
+<div class="product-research"><p><strong>Research:</strong> A multi-component research blend whose characteristics depend on the ingredients and concentrations in the formulation.</p><p><strong>In Plain English:</strong> In simple terms, researchers study how the individual components interact with their biological pathways and how those combined signals behave within an experimental system.</p></div><a class="card-btn" href="mailto:mr.awesomepeps@gmail.com?subject=Order%20Request%20-%20KLOW%2080mg">Request Order</a>
+</div>
+</article><article class="card">
+<img alt="KPV 10mg" loading="lazy" src="images/catalog-kpv-10mg.jpg"/>
+<div class="card-body">
+<h3>KPV <span>10mg</span></h3>
+<div class="price">$40.00</div>
+<p>Research-use material. Product information and availability may vary.</p>
+<div class="product-research"><p><strong>Research:</strong> A three-amino-acid fragment derived from alpha-MSH, studied for effects on inflammatory and immune signaling.</p><p><strong>In Plain English:</strong> Researchers are interested in how KPV influences inflammatory signals. It is studied in research involving the gut, skin, immune signaling, inflammation, and epithelial-barrier biology.</p></div><a class="card-btn" href="mailto:mr.awesomepeps@gmail.com?subject=Order%20Request%20-%20KPV%2010mg">Request Order</a>
+</div>
+</article><article class="card"><img alt="Melanotan II (MT-2) 10 mg" src="images/catalog-melanotan-ii-mt-2-10-mg.jpg"/><h3>Melanotan II (MT-2) <span>10 mg</span></h3><div class="price">$50</div><div class="product-research"><p><strong>Research:</strong> A synthetic melanocortin peptide studied for activity at melanocortin receptors involved in pigmentation and central nervous-system signaling.</p><p><strong>In Plain English:</strong> In simple terms, researchers study melanocortin pathways involved in melanin production and pigmentation, as well as appetite and sexual-response signaling.</p></div><a class="btn" href="mailto:mr.awesomepeps@gmail.com?subject=Order%20Request%20-%20Melanotan%20II%20(MT-2)%2010%20mg">Order Request</a></article><article class="card">
+<img alt="MOTS-C 20mg" loading="lazy" src="images/catalog-mots-c-20mg.jpg"/>
+<div class="card-body">
+<h3>MOTS-C <span>20mg</span></h3>
+<div class="price">$60.00</div>
+<p>Research-use material. Product information and availability may vary.</p>
+<div class="product-research"><p><strong>Research:</strong> A mitochondrial-derived peptide involved in communication between mitochondria, cellular metabolism, and stress-response pathways.</p><p><strong>In Plain English:</strong> MOTS-C is studied as a metabolic signal, including AMPK-related pathways that help cells respond to energy demand and metabolic stress. Research areas include glucose handling, insulin sensitivity, skeletal-muscle metabolism, exercise responses, and aging biology.</p></div><a class="card-btn" href="mailto:mr.awesomepeps@gmail.com?subject=Order%20Request%20-%20MOTS-C%2020mg">Request Order</a>
+</div>
+</article><article class="card"><img alt="MOTS-C 40 mg" src="images/catalog-mots-c-40-mg.jpg"/><h3>MOTS-C <span>40 mg</span></h3><div class="price">$120</div><div class="product-research"><p><strong>Research:</strong> A mitochondrial-derived peptide involved in communication between mitochondria, cellular metabolism, and stress-response pathways.</p><p><strong>In Plain English:</strong> MOTS-C is studied as a metabolic signal, including AMPK-related pathways that help cells respond to energy demand and metabolic stress. Research areas include glucose handling, insulin sensitivity, skeletal-muscle metabolism, exercise responses, and aging biology.</p></div><a class="btn" href="mailto:mr.awesomepeps@gmail.com?subject=Order%20Request%20-%20MOTS-C%2040%20mg">Order Request</a></article><article class="card">
+<img alt="NAD+ 1000mg" loading="lazy" src="images/catalog-nad-1000mg.jpg"/>
+<div class="card-body">
+<h3>NAD+ <span>1000mg</span></h3>
+<div class="price">$50.00</div>
+<p>Research-use material. Product information and availability may vary.</p>
+<div class="product-research"><p><strong>Research:</strong> An essential cellular coenzyme used in energy-producing redox reactions and by signaling enzymes including sirtuins and PARPs.</p><p><strong>In Plain English:</strong> Cells need NAD+ to convert nutrients into usable energy and support signaling and DNA-repair processes. Researchers study mitochondrial function, cellular energy, aging biology, oxidative stress, and cellular repair.</p></div><a class="card-btn" href="mailto:mr.awesomepeps@gmail.com?subject=Order%20Request%20-%20NAD%2B%201000mg">Request Order</a>
+</div>
+</article><article class="card"><img alt="Oxytocin 5 mg" src="images/catalog-oxytocin-5-mg.jpg"/><h3>Oxytocin <span>5 mg</span></h3><div class="price">$30</div><div class="product-research"><p><strong>Research:</strong> A naturally occurring peptide hormone that activates oxytocin receptors in the brain and reproductive tissues.</p><p><strong>In Plain English:</strong> In simple terms, oxytocin signaling is involved in social bonding and affiliation, stress responses, reproductive physiology, uterine contraction, milk let-down, and multiple brain-signaling pathways.</p></div><a class="btn" href="mailto:mr.awesomepeps@gmail.com?subject=Order%20Request%20-%20Oxytocin%205%20mg">Order Request</a></article><article class="card"><img alt="Oxytocin 10 mg" src="images/catalog-oxytocin-10-mg.jpg"/><h3>Oxytocin <span>10 mg</span></h3><div class="price">$40</div><div class="product-research"><p><strong>Research:</strong> A naturally occurring peptide hormone that activates oxytocin receptors in the brain and reproductive tissues.</p><p><strong>In Plain English:</strong> In simple terms, oxytocin signaling is involved in social bonding and affiliation, stress responses, reproductive physiology, uterine contraction, milk let-down, and multiple brain-signaling pathways.</p></div><a class="btn" href="mailto:mr.awesomepeps@gmail.com?subject=Order%20Request%20-%20Oxytocin%2010%20mg">Order Request</a></article><article class="card"><img alt="PE-22-28 5 mg" src="images/catalog-pe-22-28-5-mg.jpg"/><h3>PE-22-28 <span>5 mg</span></h3><div class="price">$35</div><div class="product-research"><p><strong>Research:</strong> An experimental peptide derived from the spadin family and studied in neuroscience research involving TREK-1 potassium-channel signaling.</p><p><strong>In Plain English:</strong> In simple terms, researchers investigate how changing TREK-1 signaling may affect neuronal excitability, mood-related pathways, stress responses, and neuroplasticity.</p></div><a class="btn" href="mailto:mr.awesomepeps@gmail.com?subject=Order%20Request%20-%20PE-22-28%205%20mg">Order Request</a></article><article class="card"><img alt="PE-22-28 10 mg" src="images/catalog-pe-22-28-10-mg.jpg"/><h3>PE-22-28 <span>10 mg</span></h3><div class="price">$50</div><div class="product-research"><p><strong>Research:</strong> An experimental peptide derived from the spadin family and studied in neuroscience research involving TREK-1 potassium-channel signaling.</p><p><strong>In Plain English:</strong> In simple terms, researchers investigate how changing TREK-1 signaling may affect neuronal excitability, mood-related pathways, stress responses, and neuroplasticity.</p></div><a class="btn" href="mailto:mr.awesomepeps@gmail.com?subject=Order%20Request%20-%20PE-22-28%2010%20mg">Order Request</a></article><article class="card">
+<img alt="Pinealon 10mg" loading="lazy" src="images/catalog-pinealon-10mg.jpg"/>
+<div class="card-body">
+<h3>Pinealon <span>10mg</span></h3>
+<div class="price">$50.00</div>
+<p>Research-use material. Product information and availability may vary.</p>
+<div class="product-research"><p><strong>Research:</strong> A synthetic tripeptide studied in neuronal cells, gene expression, oxidative stress, and aging-related biology.</p><p><strong>In Plain English:</strong> Researchers are interested in how this small peptide influences brain-cell stress responses and gene activity, including cognition, neuronal function, oxidative-stress, and healthy-aging research.</p></div><a class="card-btn" href="mailto:mr.awesomepeps@gmail.com?subject=Order%20Request%20-%20Pinealon%2010mg">Request Order</a>
+</div>
+</article><article class="card"><img alt="PT-141 10 mg" src="images/catalog-pt-141-10-mg.jpg"/><h3>PT-141 <span>10 mg</span></h3><div class="price">$40</div><div class="product-research"><p><strong>Research:</strong> Also known as bremelanotide, a melanocortin-receptor agonist studied in central nervous-system pathways involved in sexual response.</p><p><strong>In Plain English:</strong> In simple terms, researchers study how melanocortin signaling in the brain influences sexual arousal and desire rather than acting primarily through blood-flow pathways.</p></div><a class="btn" href="mailto:mr.awesomepeps@gmail.com?subject=Order%20Request%20-%20PT-141%2010%20mg">Order Request</a></article><article class="card">
+<img alt="Retatrutide 30mg" loading="lazy" src="images/catalog-retatrutide-30mg.jpg"/>
+<div class="card-body">
+<h3>Retatrutide <span>30mg</span></h3>
+<div class="price">$75.00</div>
+<p>Research-use material. Product information and availability may vary.</p>
+<div class="product-research"><p><strong>Research:</strong> An investigational molecule designed to activate three metabolic receptors: GIP, GLP-1, and glucagon receptors.</p><p><strong>In Plain English:</strong> These receptor systems influence appetite, glucose control, insulin-related signaling, digestion, and energy expenditure. Researchers study how combining all three signals affects metabolic function and body-weight regulation.</p></div><a class="card-btn" href="mailto:mr.awesomepeps@gmail.com?subject=Order%20Request%20-%20Retatrutide%2030mg">Request Order</a>
+</div>
+</article><article class="card"><img alt="Retatrutide 40 mg" src="images/catalog-retatrutide-40-mg.jpg"/><h3>Retatrutide <span>40 mg</span></h3><div class="price">$100</div><div class="product-research"><p><strong>Research:</strong> An investigational molecule designed to activate three metabolic receptors: GIP, GLP-1, and glucagon receptors.</p><p><strong>In Plain English:</strong> These receptor systems influence appetite, glucose control, insulin-related signaling, digestion, and energy expenditure. Researchers study how combining all three signals affects metabolic function and body-weight regulation.</p></div><a class="btn" href="mailto:mr.awesomepeps@gmail.com?subject=Order%20Request%20-%20Retatrutide%2040%20mg">Order Request</a></article><article class="card">
+<img alt="Selank 10mg" loading="lazy" src="images/catalog-selank-10mg.jpg"/>
+<div class="card-body">
+<h3>Selank <span>10mg</span></h3>
+<div class="price">$40.00</div>
+<p>Research-use material. Product information and availability may vary.</p>
+<div class="product-research"><p><strong>Research:</strong> A synthetic peptide investigated for effects on neurochemical signaling, cognition, behavior, and stress responses.</p><p><strong>In Plain English:</strong> Researchers are interested in how Selank influences brain signaling associated with stress and anxiety-like behavior, mood-related signaling, attention, focus, and cognition.</p></div><a class="card-btn" href="mailto:mr.awesomepeps@gmail.com?subject=Order%20Request%20-%20Selank%2010mg">Request Order</a>
+</div>
+</article><article class="card">
+<img alt="Semax 10mg" loading="lazy" src="images/catalog-semax-10mg.jpg"/>
+<div class="card-body">
+<h3>Semax <span>10mg</span></h3>
+<div class="price">$40.00</div>
+<p>Research-use material. Product information and availability may vary.</p>
+<div class="product-research"><p><strong>Research:</strong> A synthetic ACTH-derived peptide investigated in neurotrophic signaling, gene expression, cognition, and responses to neurological stress.</p><p><strong>In Plain English:</strong> Researchers study how Semax influences signaling involved in brain-cell adaptation, learning, memory, attention, focus, and responses to neurological stress.</p></div><a class="card-btn" href="mailto:mr.awesomepeps@gmail.com?subject=Order%20Request%20-%20Semax%2010mg">Request Order</a>
+</div>
+</article><article class="card">
+<img alt="Sermorelin 10mg" loading="lazy" src="images/catalog-sermorelin-10mg.jpg"/>
+<div class="card-body">
+<h3>Sermorelin <span>10mg</span></h3>
+<div class="price">$55.00</div>
+<p>Research-use material. Product information and availability may vary.</p>
+<div class="product-research"><p><strong>Research:</strong> A synthetic fragment of growth-hormone-releasing hormone that activates GHRH receptors on pituitary somatotroph cells.</p><p><strong>In Plain English:</strong> It signals the pituitary to release the body's own growth hormone, which then influences downstream IGF-1 signaling. Researchers study growth, recovery, metabolism, body composition, and endocrine physiology.</p></div><a class="card-btn" href="mailto:mr.awesomepeps@gmail.com?subject=Order%20Request%20-%20Sermorelin%2010mg">Request Order</a>
+</div>
+</article><article class="card">
+<img alt="SS-31 10mg" loading="lazy" src="images/catalog-ss-31-10mg.jpg"/>
+<div class="card-body">
+<h3>SS-31 <span>10mg</span></h3>
+<div class="price">$50.00</div>
+<p>Research-use material. Product information and availability may vary.</p>
+<div class="product-research"><p><strong>Research:</strong> Also called elamipretide, SS-31 is a mitochondria-targeting tetrapeptide studied for interactions with cardiolipin in the inner mitochondrial membrane.</p><p><strong>In Plain English:</strong> Researchers investigate how mitochondrial membrane function affects cellular energy production and oxidative stress, including mitochondrial, muscle, cardiac, cellular-energy, and aging-related research.</p></div><a class="card-btn" href="mailto:mr.awesomepeps@gmail.com?subject=Order%20Request%20-%20SS-31%2010mg">Request Order</a>
+</div>
+</article><article class="card"><img alt="SS-31 50 mg" src="images/catalog-ss-31-50-mg.jpg"/><h3>SS-31 <span>50 mg</span></h3><div class="price">$140</div><div class="product-research"><p><strong>Research:</strong> Also called elamipretide, SS-31 is a mitochondria-targeting tetrapeptide studied for interactions with cardiolipin in the inner mitochondrial membrane.</p><p><strong>In Plain English:</strong> Researchers investigate how mitochondrial membrane function affects cellular energy production and oxidative stress, including mitochondrial, muscle, cardiac, cellular-energy, and aging-related research.</p></div><a class="btn" href="mailto:mr.awesomepeps@gmail.com?subject=Order%20Request%20-%20SS-31%2050%20mg">Order Request</a></article><article class="card">
+<img alt="TB-500 10mg" loading="lazy" src="images/catalog-tb-500-10mg.jpg"/>
+<div class="card-body">
+<h3>TB-500 <span>10mg</span></h3>
+<div class="price">$65.00</div>
+<p>Research-use material. Product information and availability may vary.</p>
+<div class="product-research"><p><strong>Research:</strong> A synthetic research material related to thymosin beta-4, an actin-binding peptide involved in cell movement and tissue-repair biology.</p><p><strong>In Plain English:</strong> Research examines cell migration, formation of new blood vessels, inflammatory signaling, and wound and tissue-repair processes, which is why it is commonly studied in recovery and tissue-repair models.</p></div><a class="card-btn" href="mailto:mr.awesomepeps@gmail.com?subject=Order%20Request%20-%20TB-500%2010mg">Request Order</a>
+</div>
+</article><article class="card">
+<img alt="Tesamorelin 10mg" loading="lazy" src="images/catalog-tesamorelin-10mg.jpg"/>
+<div class="card-body">
+<h3>Tesamorelin <span>10mg</span></h3>
+<div class="price">$65.00</div>
+<p>Research-use material. Product information and availability may vary.</p>
+<div class="product-research"><p><strong>Research:</strong> A growth-hormone-releasing hormone analog that activates pituitary GHRH receptors and downstream GH/IGF-1 signaling.</p><p><strong>In Plain English:</strong> It signals the pituitary to increase the body's own growth-hormone signaling rather than directly supplying GH. Researchers study metabolism, fat-tissue biology, body composition, and downstream IGF-1 signaling.</p></div><a class="card-btn" href="mailto:mr.awesomepeps@gmail.com?subject=Order%20Request%20-%20Tesamorelin%2010mg">Request Order</a>
+</div>
+</article></div>
+</section>
+<section class="section wrap" id="contact">
+<div class="contact">
+<h2>Customer Order Requests</h2>
+<p>Questions about availability or an order request? Email Awesome Peps and include the product name and quantity you're asking about.</p>
+<a class="button" href="mailto:mr.awesomepeps@gmail.com?subject=Awesome%20Peps%20Order%20Request">Email Awesome Peps</a>
+</div>
+</section>
+</main>
+<footer>
+<div class="wrap">Awesome Peps · Research use only · Not for human consumption</div>
+</footer>
 </body>
 </html>
 <!-- deploy -->
