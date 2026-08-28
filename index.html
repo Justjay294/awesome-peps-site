@@ -1347,13 +1347,25 @@ article.card > a.btn.request-open:hover {
       'REQUESTED RESEARCH MATERIALS'
     ];
 
+    let emailGrandTotal = 0;
+
     selected.forEach(item => {
-      lines.push(item.name + ' — ' + item.strength + ' — ' + item.price + ' each — Qty: ' + item.qty + ' — Line Total: $' + item.lineTotal.toFixed(2));
+      const itemTotal = item.qty * parsePrice(item.price);
+      emailGrandTotal += itemTotal;
+      lines.push(
+        item.name + ' — ' +
+        item.strength + ' — ' +
+        item.price + ' each — Qty: ' +
+        item.qty + ' — Line Total: $' +
+        itemTotal.toFixed(2)
+      );
     });
 
     lines.push(
       '',
-      'GRAND TOTAL: $' + grandTotal.toFixed(2)
+      '----------------------------------------',
+      'ESTIMATED ORDER TOTAL: $' + emailGrandTotal.toFixed(2),
+      '----------------------------------------'
     );
 
     lines.push(
