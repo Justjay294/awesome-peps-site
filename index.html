@@ -465,6 +465,72 @@ article.card > a.btn.request-open:hover {
   color: #ffffff;
   font-size: 1.45rem;
 }
+
+.request-row {
+  grid-template-columns: minmax(0,1fr) 90px 105px 105px !important;
+}
+.line-total {
+  color: #79c4ff;
+  font-weight: 900;
+  text-align: right;
+  font-size: .95rem;
+}
+.request-total-box {
+  position: sticky;
+  bottom: 74px;
+  z-index: 4;
+  margin: 18px 0 12px !important;
+  padding: 18px 20px !important;
+  border: 2px solid #3a9cff !important;
+  background: linear-gradient(180deg, #133b66 0%, #0a2038 100%) !important;
+  box-shadow: 0 10px 30px rgba(0,0,0,.42), 0 0 20px rgba(58,156,255,.18);
+}
+.request-total-box span {
+  font-size: 1.08rem !important;
+  color: #d9ecff !important;
+}
+.request-total-box strong {
+  font-size: 1.8rem !important;
+  color: #ffffff !important;
+}
+#email-research-request {
+  position: sticky;
+  bottom: 10px;
+  z-index: 5;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  min-height: 58px;
+  width: 100%;
+  margin-top: 12px;
+  border: 2px solid #78c7ff !important;
+  border-radius: 14px !important;
+  background: linear-gradient(180deg, #3aa0ff 0%, #1778d1 100%) !important;
+  color: #fff !important;
+  font-size: 1.12rem !important;
+  font-weight: 900 !important;
+  letter-spacing: .01em;
+  text-decoration: none !important;
+  box-shadow: 0 12px 30px rgba(0,116,220,.35), inset 0 1px 0 rgba(255,255,255,.2);
+  cursor: pointer;
+}
+#email-research-request:hover:not(:disabled) {
+  filter: brightness(1.08);
+  transform: translateY(-1px);
+}
+#email-research-request:disabled {
+  opacity: .38;
+  cursor: not-allowed;
+}
+@media (max-width: 760px) {
+  .request-row {
+    grid-template-columns: minmax(0,1fr) 72px !important;
+  }
+  .line-total {
+    grid-column: 2;
+    text-align: right;
+  }
+}
 </style>
 </head>
 <body>
@@ -710,7 +776,7 @@ article.card > a.btn.request-open:hover {
 <label class="qty-label">
           Qty
           <input class="qty-input request-control" data-name="AHK-Cu" data-price="$40" data-strength="50 mg" disabled="" max="99" min="0" step="1" type="number" value="0"/>
-</label>
+</label><div class="line-total">$0.00</div>
 </div>
 <div class="request-row">
 <div class="request-product">
@@ -721,7 +787,7 @@ article.card > a.btn.request-open:hover {
 <label class="qty-label">
           Qty
           <input class="qty-input request-control" data-name="AICAR" data-price="$55" data-strength="100 mg" disabled="" max="99" min="0" step="1" type="number" value="0"/>
-</label>
+</label><div class="line-total">$0.00</div>
 </div>
 <div class="request-row">
 <div class="request-product">
@@ -732,7 +798,7 @@ article.card > a.btn.request-open:hover {
 <label class="qty-label">
           Qty
           <input class="qty-input request-control" data-name="ARA-290" data-price="$40" data-strength="10 mg" disabled="" max="99" min="0" step="1" type="number" value="0"/>
-</label>
+</label><div class="line-total">$0.00</div>
 </div>
 <div class="request-row">
 <div class="request-product">
@@ -743,7 +809,7 @@ article.card > a.btn.request-open:hover {
 <label class="qty-label">
           Qty
           <input class="qty-input request-control" data-name="BPC-157" data-price="$45.00" data-strength="10mg" disabled="" max="99" min="0" step="1" type="number" value="0"/>
-</label>
+</label><div class="line-total">$0.00</div>
 </div>
 <div class="request-row">
 <div class="request-product">
@@ -754,7 +820,7 @@ article.card > a.btn.request-open:hover {
 <label class="qty-label">
           Qty
           <input class="qty-input request-control" data-name="Cagrilintide" data-price="$85" data-strength="10 mg" disabled="" max="99" min="0" step="1" type="number" value="0"/>
-</label>
+</label><div class="line-total">$0.00</div>
 </div>
 <div class="request-row">
 <div class="request-product">
@@ -765,7 +831,7 @@ article.card > a.btn.request-open:hover {
 <label class="qty-label">
           Qty
           <input class="qty-input request-control" data-name="Cartalax" data-price="$70.00" data-strength="20mg" disabled="" max="99" min="0" step="1" type="number" value="0"/>
-</label>
+</label><div class="line-total">$0.00</div>
 </div>
 <div class="request-row">
 <div class="request-product">
@@ -776,7 +842,7 @@ article.card > a.btn.request-open:hover {
 <label class="qty-label">
           Qty
           <input class="qty-input request-control" data-name="CJC-1295 (without DAC) + Ipamorelin" data-price="$45" data-strength="5 mg + 5 mg" disabled="" max="99" min="0" step="1" type="number" value="0"/>
-</label>
+</label><div class="line-total">$0.00</div>
 </div>
 <div class="request-row">
 <div class="request-product">
@@ -787,7 +853,7 @@ article.card > a.btn.request-open:hover {
 <label class="qty-label">
           Qty
           <input class="qty-input request-control" data-name="DSIP" data-price="$25.00" data-strength="5mg" disabled="" max="99" min="0" step="1" type="number" value="0"/>
-</label>
+</label><div class="line-total">$0.00</div>
 </div>
 <div class="request-row">
 <div class="request-product">
@@ -798,7 +864,7 @@ article.card > a.btn.request-open:hover {
 <label class="qty-label">
           Qty
           <input class="qty-input request-control" data-name="Epithalon" data-price="$45" data-strength="10 mg" disabled="" max="99" min="0" step="1" type="number" value="0"/>
-</label>
+</label><div class="line-total">$0.00</div>
 </div>
 <div class="request-row">
 <div class="request-product">
@@ -809,7 +875,7 @@ article.card > a.btn.request-open:hover {
 <label class="qty-label">
           Qty
           <input class="qty-input request-control" data-name="Epithalon" data-price="$75" data-strength="50 mg" disabled="" max="99" min="0" step="1" type="number" value="0"/>
-</label>
+</label><div class="line-total">$0.00</div>
 </div>
 <div class="request-row">
 <div class="request-product">
@@ -820,7 +886,7 @@ article.card > a.btn.request-open:hover {
 <label class="qty-label">
           Qty
           <input class="qty-input request-control" data-name="GHK-Cu" data-price="$35" data-strength="50 mg" disabled="" max="99" min="0" step="1" type="number" value="0"/>
-</label>
+</label><div class="line-total">$0.00</div>
 </div>
 <div class="request-row">
 <div class="request-product">
@@ -831,7 +897,7 @@ article.card > a.btn.request-open:hover {
 <label class="qty-label">
           Qty
           <input class="qty-input request-control" data-name="GHK-Cu" data-price="$50" data-strength="100 mg" disabled="" max="99" min="0" step="1" type="number" value="0"/>
-</label>
+</label><div class="line-total">$0.00</div>
 </div>
 <div class="request-row">
 <div class="request-product">
@@ -842,7 +908,7 @@ article.card > a.btn.request-open:hover {
 <label class="qty-label">
           Qty
           <input class="qty-input request-control" data-name="GLOW" data-price="$70" data-strength="70 mg" disabled="" max="99" min="0" step="1" type="number" value="0"/>
-</label>
+</label><div class="line-total">$0.00</div>
 </div>
 <div class="request-row">
 <div class="request-product">
@@ -853,7 +919,7 @@ article.card > a.btn.request-open:hover {
 <label class="qty-label">
           Qty
           <input class="qty-input request-control" data-name="Glutathione" data-price="$40.00" data-strength="600mg" disabled="" max="99" min="0" step="1" type="number" value="0"/>
-</label>
+</label><div class="line-total">$0.00</div>
 </div>
 <div class="request-row">
 <div class="request-product">
@@ -864,7 +930,7 @@ article.card > a.btn.request-open:hover {
 <label class="qty-label">
           Qty
           <input class="qty-input request-control" data-name="hCG" data-price="$100" data-strength="10,000 IU" disabled="" max="99" min="0" step="1" type="number" value="0"/>
-</label>
+</label><div class="line-total">$0.00</div>
 </div>
 <div class="request-row">
 <div class="request-product">
@@ -875,7 +941,7 @@ article.card > a.btn.request-open:hover {
 <label class="qty-label">
           Qty
           <input class="qty-input request-control" data-name="IGF-1 LR3" data-price="$60.00" data-strength="1mg" disabled="" max="99" min="0" step="1" type="number" value="0"/>
-</label>
+</label><div class="line-total">$0.00</div>
 </div>
 <div class="request-row">
 <div class="request-product">
@@ -886,7 +952,7 @@ article.card > a.btn.request-open:hover {
 <label class="qty-label">
           Qty
           <input class="qty-input request-control" data-name="Ipamorelin" data-price="$40.00" data-strength="10mg" disabled="" max="99" min="0" step="1" type="number" value="0"/>
-</label>
+</label><div class="line-total">$0.00</div>
 </div>
 <div class="request-row">
 <div class="request-product">
@@ -897,7 +963,7 @@ article.card > a.btn.request-open:hover {
 <label class="qty-label">
           Qty
           <input class="qty-input request-control" data-name="Kisspeptin" data-price="$50.00" data-strength="10mg" disabled="" max="99" min="0" step="1" type="number" value="0"/>
-</label>
+</label><div class="line-total">$0.00</div>
 </div>
 <div class="request-row">
 <div class="request-product">
@@ -908,7 +974,7 @@ article.card > a.btn.request-open:hover {
 <label class="qty-label">
           Qty
           <input class="qty-input request-control" data-name="KLOW" data-price="$75.00" data-strength="80mg" disabled="" max="99" min="0" step="1" type="number" value="0"/>
-</label>
+</label><div class="line-total">$0.00</div>
 </div>
 <div class="request-row">
 <div class="request-product">
@@ -919,7 +985,7 @@ article.card > a.btn.request-open:hover {
 <label class="qty-label">
           Qty
           <input class="qty-input request-control" data-name="KPV" data-price="$40.00" data-strength="10mg" disabled="" max="99" min="0" step="1" type="number" value="0"/>
-</label>
+</label><div class="line-total">$0.00</div>
 </div>
 <div class="request-row">
 <div class="request-product">
@@ -930,7 +996,7 @@ article.card > a.btn.request-open:hover {
 <label class="qty-label">
           Qty
           <input class="qty-input request-control" data-name="Melanotan II (MT-2)" data-price="$50" data-strength="10 mg" disabled="" max="99" min="0" step="1" type="number" value="0"/>
-</label>
+</label><div class="line-total">$0.00</div>
 </div>
 <div class="request-row">
 <div class="request-product">
@@ -941,7 +1007,7 @@ article.card > a.btn.request-open:hover {
 <label class="qty-label">
           Qty
           <input class="qty-input request-control" data-name="MOTS-C" data-price="$60.00" data-strength="20mg" disabled="" max="99" min="0" step="1" type="number" value="0"/>
-</label>
+</label><div class="line-total">$0.00</div>
 </div>
 <div class="request-row">
 <div class="request-product">
@@ -952,7 +1018,7 @@ article.card > a.btn.request-open:hover {
 <label class="qty-label">
           Qty
           <input class="qty-input request-control" data-name="MOTS-C" data-price="$120" data-strength="40 mg" disabled="" max="99" min="0" step="1" type="number" value="0"/>
-</label>
+</label><div class="line-total">$0.00</div>
 </div>
 <div class="request-row">
 <div class="request-product">
@@ -963,7 +1029,7 @@ article.card > a.btn.request-open:hover {
 <label class="qty-label">
           Qty
           <input class="qty-input request-control" data-name="NAD+" data-price="$50.00" data-strength="1000mg" disabled="" max="99" min="0" step="1" type="number" value="0"/>
-</label>
+</label><div class="line-total">$0.00</div>
 </div>
 <div class="request-row">
 <div class="request-product">
@@ -974,7 +1040,7 @@ article.card > a.btn.request-open:hover {
 <label class="qty-label">
           Qty
           <input class="qty-input request-control" data-name="Oxytocin" data-price="$30" data-strength="5 mg" disabled="" max="99" min="0" step="1" type="number" value="0"/>
-</label>
+</label><div class="line-total">$0.00</div>
 </div>
 <div class="request-row">
 <div class="request-product">
@@ -985,7 +1051,7 @@ article.card > a.btn.request-open:hover {
 <label class="qty-label">
           Qty
           <input class="qty-input request-control" data-name="Oxytocin" data-price="$40" data-strength="10 mg" disabled="" max="99" min="0" step="1" type="number" value="0"/>
-</label>
+</label><div class="line-total">$0.00</div>
 </div>
 <div class="request-row">
 <div class="request-product">
@@ -996,7 +1062,7 @@ article.card > a.btn.request-open:hover {
 <label class="qty-label">
           Qty
           <input class="qty-input request-control" data-name="PE-22-28" data-price="$35" data-strength="5 mg" disabled="" max="99" min="0" step="1" type="number" value="0"/>
-</label>
+</label><div class="line-total">$0.00</div>
 </div>
 <div class="request-row">
 <div class="request-product">
@@ -1007,7 +1073,7 @@ article.card > a.btn.request-open:hover {
 <label class="qty-label">
           Qty
           <input class="qty-input request-control" data-name="PE-22-28" data-price="$50" data-strength="10 mg" disabled="" max="99" min="0" step="1" type="number" value="0"/>
-</label>
+</label><div class="line-total">$0.00</div>
 </div>
 <div class="request-row">
 <div class="request-product">
@@ -1018,7 +1084,7 @@ article.card > a.btn.request-open:hover {
 <label class="qty-label">
           Qty
           <input class="qty-input request-control" data-name="Pinealon" data-price="$50.00" data-strength="10mg" disabled="" max="99" min="0" step="1" type="number" value="0"/>
-</label>
+</label><div class="line-total">$0.00</div>
 </div>
 <div class="request-row">
 <div class="request-product">
@@ -1029,7 +1095,7 @@ article.card > a.btn.request-open:hover {
 <label class="qty-label">
           Qty
           <input class="qty-input request-control" data-name="PT-141" data-price="$40" data-strength="10 mg" disabled="" max="99" min="0" step="1" type="number" value="0"/>
-</label>
+</label><div class="line-total">$0.00</div>
 </div>
 <div class="request-row">
 <div class="request-product">
@@ -1040,7 +1106,7 @@ article.card > a.btn.request-open:hover {
 <label class="qty-label">
           Qty
           <input class="qty-input request-control" data-name="Retatrutide" data-price="$75.00" data-strength="30mg" disabled="" max="99" min="0" step="1" type="number" value="0"/>
-</label>
+</label><div class="line-total">$0.00</div>
 </div>
 <div class="request-row">
 <div class="request-product">
@@ -1051,7 +1117,7 @@ article.card > a.btn.request-open:hover {
 <label class="qty-label">
           Qty
           <input class="qty-input request-control" data-name="Retatrutide" data-price="$100" data-strength="40 mg" disabled="" max="99" min="0" step="1" type="number" value="0"/>
-</label>
+</label><div class="line-total">$0.00</div>
 </div>
 <div class="request-row">
 <div class="request-product">
@@ -1062,7 +1128,7 @@ article.card > a.btn.request-open:hover {
 <label class="qty-label">
           Qty
           <input class="qty-input request-control" data-name="Selank" data-price="$40.00" data-strength="10mg" disabled="" max="99" min="0" step="1" type="number" value="0"/>
-</label>
+</label><div class="line-total">$0.00</div>
 </div>
 <div class="request-row">
 <div class="request-product">
@@ -1073,7 +1139,7 @@ article.card > a.btn.request-open:hover {
 <label class="qty-label">
           Qty
           <input class="qty-input request-control" data-name="Semax" data-price="$40.00" data-strength="10mg" disabled="" max="99" min="0" step="1" type="number" value="0"/>
-</label>
+</label><div class="line-total">$0.00</div>
 </div>
 <div class="request-row">
 <div class="request-product">
@@ -1084,7 +1150,7 @@ article.card > a.btn.request-open:hover {
 <label class="qty-label">
           Qty
           <input class="qty-input request-control" data-name="Sermorelin" data-price="$55.00" data-strength="10mg" disabled="" max="99" min="0" step="1" type="number" value="0"/>
-</label>
+</label><div class="line-total">$0.00</div>
 </div>
 <div class="request-row">
 <div class="request-product">
@@ -1095,7 +1161,7 @@ article.card > a.btn.request-open:hover {
 <label class="qty-label">
           Qty
           <input class="qty-input request-control" data-name="SS-31" data-price="$50.00" data-strength="10mg" disabled="" max="99" min="0" step="1" type="number" value="0"/>
-</label>
+</label><div class="line-total">$0.00</div>
 </div>
 <div class="request-row">
 <div class="request-product">
@@ -1106,7 +1172,7 @@ article.card > a.btn.request-open:hover {
 <label class="qty-label">
           Qty
           <input class="qty-input request-control" data-name="SS-31" data-price="$140" data-strength="50 mg" disabled="" max="99" min="0" step="1" type="number" value="0"/>
-</label>
+</label><div class="line-total">$0.00</div>
 </div>
 <div class="request-row">
 <div class="request-product">
@@ -1117,7 +1183,7 @@ article.card > a.btn.request-open:hover {
 <label class="qty-label">
           Qty
           <input class="qty-input request-control" data-name="TB-500" data-price="$65.00" data-strength="10mg" disabled="" max="99" min="0" step="1" type="number" value="0"/>
-</label>
+</label><div class="line-total">$0.00</div>
 </div>
 <div class="request-row">
 <div class="request-product">
@@ -1128,7 +1194,7 @@ article.card > a.btn.request-open:hover {
 <label class="qty-label">
           Qty
           <input class="qty-input request-control" data-name="Tesamorelin" data-price="$65.00" data-strength="10mg" disabled="" max="99" min="0" step="1" type="number" value="0"/>
-</label>
+</label><div class="line-total">$0.00</div>
 </div>
 </div>
 <div class="request-total-box">
@@ -1151,6 +1217,7 @@ article.card > a.btn.request-open:hover {
   const controls = Array.from(modal.querySelectorAll('.request-control'));
   const qtyInputs = Array.from(modal.querySelectorAll('.qty-input'));
   const estimatedTotal = document.getElementById('estimated-total');
+  const lineTotals = Array.from(modal.querySelectorAll('.line-total'));
 
   function parsePrice(priceText) {
     const n = parseFloat(String(priceText || '').replace(/[^0-9.]/g, ''));
@@ -1159,15 +1226,27 @@ article.card > a.btn.request-open:hover {
 
   function calculateTotal() {
     let total = 0;
-    qtyInputs.forEach(input => {
-      const qty = parseInt(input.value || '0', 10) || 0;
-      total += qty * parsePrice(input.dataset.price);
+    qtyInputs.forEach((input, index) => {
+      const qty = Math.max(0, parseInt(input.value || '0', 10) || 0);
+      const unitPrice = parsePrice(input.dataset.price);
+      const lineTotal = qty * unitPrice;
+      total += lineTotal;
+      if (lineTotals[index]) {
+        lineTotals[index].textContent = '$' + lineTotal.toFixed(2);
+      }
     });
-    estimatedTotal.textContent = '$' + total.toFixed(2);
+    if (estimatedTotal) {
+      estimatedTotal.textContent = '$' + total.toFixed(2);
+    }
     return total;
   }
 
-  qtyInputs.forEach(input => input.addEventListener('input', calculateTotal));
+  qtyInputs.forEach(input => {
+    input.addEventListener('input', calculateTotal);
+    input.addEventListener('change', calculateTotal);
+    input.addEventListener('keyup', calculateTotal);
+  });
+  calculateTotal();
   const message = document.getElementById('request-message');
   const submit = document.getElementById('email-research-request');
 
@@ -1191,6 +1270,7 @@ article.card > a.btn.request-open:hover {
   ack.addEventListener('change', function () {
     controls.forEach(el => el.disabled = !ack.checked);
     message.textContent = ack.checked ? '' : 'Please acknowledge the research-use statement to continue.';
+    calculateTotal();
   });
 
   submit.addEventListener('click', function () {
@@ -1247,7 +1327,7 @@ article.card > a.btn.request-open:hover {
 
     lines.push(
       '',
-      'ESTIMATED TOTAL: $' + grandTotal.toFixed(2)
+      'GRAND TOTAL: $' + grandTotal.toFixed(2)
     );
 
     lines.push(
