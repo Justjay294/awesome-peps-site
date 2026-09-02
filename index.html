@@ -426,8 +426,10 @@ body.request-open-body { overflow: hidden; }
   .qty-label { grid-column: 1 / -1; justify-content: flex-start; }
 }
 article.card:has(img[src*="catalog-tirzepatide-30mg.jpg"]) {
-  grid-column: auto !important;
-  width: 100% !important;
+  width: calc(50% - 12px) !important;
+  max-width: calc(50% - 12px) !important;
+  justify-self: start !important;
+}
 }
 article.card  a.btn.request-open {
   display: inline-flex !important;
