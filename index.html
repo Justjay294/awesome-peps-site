@@ -1574,6 +1574,71 @@ article.card  a.btn.request-open:hover {
   }
 </script>
 
+<style>
+  #installAwesomeApp {
+    display: block;
+    width: min(90%, 420px);
+    margin: 25px auto;
+    padding: 16px 20px;
+    border: 1px solid #25b9ff;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #087dcc, #00a9ff);
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 0 18px rgba(0, 169, 255, .35);
+  }
+</style>
+
+<button id="installAwesomeApp" type="button">
+  📲 INSTALL AWESOME PEPS APP
+</button>
+
+<script>
+  const installButton = document.getElementById("installAwesomeApp");
+  let deferredPrompt = null;
+
+  const isIOS =
+    /iphone|ipad|ipod/i.test(navigator.userAgent);
+
+  const isStandalone =
+    window.matchMedia("(display-mode: standalone)").matches ||
+    window.navigator.standalone === true;
+
+  if (isStandalone) {
+    installButton.style.display = "none";
+  }
+
+  window.addEventListener("beforeinstallprompt", (event) => {
+    event.preventDefault();
+    deferredPrompt = event;
+  });
+
+  installButton.addEventListener("click", async () => {
+    if (deferredPrompt) {
+      deferredPrompt.prompt();
+      await deferredPrompt.userChoice;
+      deferredPrompt = null;
+      return;
+    }
+
+    if (isIOS) {
+      alert(
+        "To install Awesome Peps:\n\nTap the Share button, then choose Add to Home Screen."
+      );
+    } else {
+      alert(
+        "To install Awesome Peps, open your browser menu and choose Install app or Add to Home screen."
+      );
+    }
+  });
+
+  window.addEventListener("appinstalled", () => {
+    installButton.style.display = "none";
+  });
+</script>
 </body>
 </html>
 <!-- deploy -->
