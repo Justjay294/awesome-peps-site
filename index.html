@@ -6,6 +6,11 @@
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>Awesome Peps | Research Materials</title>
 <meta content="Awesome Peps research-use materials catalog. For research use only. Not for human consumption." name="description"/>
+    <link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#050505">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Awesome Peps">
 <style>
     :root {
       --bg: #07101d;
@@ -1557,6 +1562,18 @@ article.card  a.btn.request-open:hover {
     if (e.key === 'Escape' && modal.classList.contains('open')) closeModal();
   });
 })();
-</script></body>
+</script>
+
+<script>
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker.register("/service-worker.js")
+        .then(() => console.log("Awesome Peps app ready"))
+        .catch(error => console.error("Service worker error:", error));
+    });
+  }
+</script>
+
+</body>
 </html>
 <!-- deploy -->
